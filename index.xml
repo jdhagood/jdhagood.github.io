@@ -16,11 +16,53 @@
       <description>&lt;p&gt;This is my page about defextiles.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>3D Printed Clothes</title>
+      <link>https://jdhagood.github.io/projects/etch_a_sketch/</link>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://jdhagood.github.io/projects/etch_a_sketch/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cardboard Computer</title>
+      <link>https://jdhagood.github.io/projects/cardboard_computer/</link>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://jdhagood.github.io/projects/cardboard_computer/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Demo Page</title>
       <link>https://jdhagood.github.io/blog/markdown_syntax/</link>
       <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://jdhagood.github.io/blog/markdown_syntax/</guid>
       <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MIT Spokes Speaker Kits</title>
+      <link>https://jdhagood.github.io/projects/speaker_kits/</link>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://jdhagood.github.io/projects/speaker_kits/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NFC Pen Testing GLove</title>
+      <link>https://jdhagood.github.io/projects/nfc_glove/</link>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://jdhagood.github.io/projects/nfc_glove/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reciept Poetry Printing Robot</title>
+      <link>https://jdhagood.github.io/projects/poetry_robot/</link>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://jdhagood.github.io/projects/poetry_robot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Single Board Games</title>
+      <link>https://jdhagood.github.io/projects/single_board_games/</link>
+      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://jdhagood.github.io/projects/single_board_games/</guid>
+      <description></description>
     </item>
     <item>
       <title>Test Page</title>
@@ -35,48 +77,6 @@
       <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
       <guid>https://jdhagood.github.io/blog/post_3/</guid>
       <description>&lt;h2 id=&#34;donec-lacinia-eleifend-sem-a&#34;&gt;donec lacinia eleifend sem a&lt;/h2&gt;&#xA;&lt;p&gt;Pulvinar tempor ultrices amet praesent aliquet non magnis euismod elit venenatis. Aliqua consequat tristique erat nulla sit risus aliqua posuere. Potenti natoque augue proin accimsan risus scelerisque id integer curabitur mattis amet quisque. Aliquet porta sit sapien natoque sed fringilla, madssa suspendisse vivamus placerat sociis condimentum ridiculus. Natoque egestas non lectus pellentesque nunc mattis eu ridiculus pretium maecenas ligula. Gravida facilisis sem mollis sagittis aliquet ornare bibendum, leo nec morbi tortor diam maecenas tempor.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://jdhagood.github.io/projects/cardboard_computer/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jdhagood.github.io/projects/cardboard_computer/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://jdhagood.github.io/projects/etch_a_sketch/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jdhagood.github.io/projects/etch_a_sketch/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://jdhagood.github.io/projects/nfc_glove/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jdhagood.github.io/projects/nfc_glove/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://jdhagood.github.io/projects/poetry_robot/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jdhagood.github.io/projects/poetry_robot/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://jdhagood.github.io/projects/single_board_games/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jdhagood.github.io/projects/single_board_games/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://jdhagood.github.io/projects/speaker_kits/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jdhagood.github.io/projects/speaker_kits/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
