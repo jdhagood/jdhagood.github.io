@@ -35,16 +35,10 @@
     <loc>https://jdhagood.github.io/tags/markdown/</loc>
     <lastmod>2022-11-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jdhagood.github.io/projects/speaker_kits/</loc>
-    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://jdhagood.github.io/projects/nfc_glove/</loc>
     <lastmod>2022-11-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jdhagood.github.io/projects/</loc>
-    <lastmod>2022-11-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jdhagood.github.io/projects/poetry_robot/</loc>
     <lastmod>2022-11-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jdhagood.github.io/projects/single_board_games/</loc>
@@ -82,5 +76,9 @@
   </url><url>
     <loc>https://jdhagood.github.io/tags/notes/</loc>
     <lastmod>2018-01-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdhagood.github.io/projects/speaker_kits/</loc>
+  </url><url>
+    <loc>https://jdhagood.github.io/projects/poetry_robot/</loc>
   </url>
 </urlset>

@@ -114,29 +114,35 @@
 <div class="prose prose-stone dark:prose-invert max-w-none">
 <div class="mb-3">
   <h1 class="top-h1" style="font-size: 2.75em">Reciept Poetry Printing Robot</h1>
-  <p class="mb-1">November 19, 2022</p>
+  <p class="mb-1">January 1, 0001</p>
   <p>&mdash;</p>
 </div>
 <div class="content">
-  
+  <p>I wrote this down first because this is a project that I have been working on recently. My friend from Yale really likes poetry, and once I started playing with thermal printers, he got the idea to print poems with them. I thought that this was a great idea and immediately hopped into onshape. I designed a sheet metal enclosure for it with a 3D printed sign on top encouraging users to press the big red button. You can check out the Onshape cad <a href="https://cad.onshape.com/documents/cf3778deca11ee0736d88359/w/80c19d9216b3187a060b21ef/e/34e68baa4d9532f38bcb4871?renderMode=0&amp;uiState=66f1c5994927d10f4adc73d7">here</a>.</p>
+<p><img src="/images/poem_printer/poem_printer_front.jpg" alt="Poem Printer Front">
+<img src="jdhagood.github.io/static/images/poem_printer/poem_printer_back.jpg" alt="Poem Printer Back">
+The actual poems are scraped from <a href="https://www.poetryfoundation.org/">poetryfoundation.org</a> because I much prefer to read contemperary poetry rather than older poetry. If you are curious how I did this check it out on my <a href="https://github.com/jdhagood/poem_scraper/tree/main">github</a>.<br>
+After that I used a raspberry pi 3A to convert the output into serial so I could send it to a thermal printer. Here is a first test.
+<img src="images/poem_printer/printed_poems.jpg" alt="Reciepts">
+After some refining I then printed poems like this.
+<img src="images/poem_printer/printed_poems_2.jpg" alt="Reciepts2">
+I even laser cut out the sheet metal enclosure. It was barely manufacturable and in the future I will make my sheet metal enclosures into more parts to rivet together.
+<img src="images/poem_printer1/real_printer_front.jpg" alt="Real_Printer">
+Now I need to powder coat it, do the electronics, and write the rest of the script. While making this I was also inspired to have the thermal printers print out thousands of digits of constants. During pi day I would love to set some printers up in lobby 7 to print millions of digits of pi.</p>
+
 </div>
 </div>
 <div class="flex flex-row justify-around my-2">
   <h3 class="mb-1 mt-1 text-left mr-4">
     
-    <a
-      href="/projects/single_board_games/"
-      title="Single Board Games"
-    >
-      <i class="nav-menu fas fa-chevron-circle-left"></i>
-    </a>
+    <i class="text-gray-300 dark:text-gray-600 fas fa-chevron-circle-left"></i>
     
   </h3>
   <h3 class="mb-1 mt-1 text-left ml-4">
     
     <a
-      href="/projects/nfc_glove/"
-      title="NFC Pen Testing GLove"
+      href="/projects/speaker_kits/"
+      title="MIT Spokes Speaker Kits"
     >
       <i class="nav-menu fas fa-chevron-circle-right"></i>
     </a>
@@ -164,4 +170,8 @@
 
     
   </body>
+  
+  <link rel="stylesheet" href="css/custom.css">
+  
+
 </html>

@@ -37,24 +37,10 @@
       <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>MIT Spokes Speaker Kits</title>
-      <link>https://jdhagood.github.io/projects/speaker_kits/</link>
-      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://jdhagood.github.io/projects/speaker_kits/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>NFC Pen Testing GLove</title>
       <link>https://jdhagood.github.io/projects/nfc_glove/</link>
       <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://jdhagood.github.io/projects/nfc_glove/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Reciept Poetry Printing Robot</title>
-      <link>https://jdhagood.github.io/projects/poetry_robot/</link>
-      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://jdhagood.github.io/projects/poetry_robot/</guid>
       <description></description>
     </item>
     <item>
@@ -77,6 +63,20 @@
       <pubDate>Sat, 06 Jan 2018 00:00:00 +0000</pubDate>
       <guid>https://jdhagood.github.io/blog/post_3/</guid>
       <description>&lt;h2 id=&#34;donec-lacinia-eleifend-sem-a&#34;&gt;donec lacinia eleifend sem a&lt;/h2&gt;&#xA;&lt;p&gt;Pulvinar tempor ultrices amet praesent aliquet non magnis euismod elit venenatis. Aliqua consequat tristique erat nulla sit risus aliqua posuere. Potenti natoque augue proin accimsan risus scelerisque id integer curabitur mattis amet quisque. Aliquet porta sit sapien natoque sed fringilla, madssa suspendisse vivamus placerat sociis condimentum ridiculus. Natoque egestas non lectus pellentesque nunc mattis eu ridiculus pretium maecenas ligula. Gravida facilisis sem mollis sagittis aliquet ornare bibendum, leo nec morbi tortor diam maecenas tempor.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MIT Spokes Speaker Kits</title>
+      <link>https://jdhagood.github.io/projects/speaker_kits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jdhagood.github.io/projects/speaker_kits/</guid>
+      <description>&lt;p&gt;This past summer I had the privelege to bike across the country with &lt;a href=&#34;https://www.mitspokes.com/&#34;&gt;MIT Spokes&lt;/a&gt;. It was a 74-day student-led trip, starting in Washington, D.C., and ending in San Francisco. Along the way, we stopped at schools, libraries, camps, and even a correctional facility to teach STEM topics based on our personal interests.&lt;/p&gt;&#xA;&lt;p&gt;When planning my lesson, I knew I wanted it to be as hands-on as possible. I decided to teach about the physics of sound by having each student build their own speaker. From there, I had the task of manufacturing 200 speaker kits for the summer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reciept Poetry Printing Robot</title>
+      <link>https://jdhagood.github.io/projects/poetry_robot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://jdhagood.github.io/projects/poetry_robot/</guid>
+      <description>&lt;p&gt;I wrote this down first because this is a project that I have been working on recently. My friend from Yale really likes poetry, and once I started playing with thermal printers, he got the idea to print poems with them. I thought that this was a great idea and immediately hopped into onshape. I designed a sheet metal enclosure for it with a 3D printed sign on top encouraging users to press the big red button. You can check out the Onshape cad &lt;a href=&#34;https://cad.onshape.com/documents/cf3778deca11ee0736d88359/w/80c19d9216b3187a060b21ef/e/34e68baa4d9532f38bcb4871?renderMode=0&amp;amp;uiState=66f1c5994927d10f4adc73d7&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
