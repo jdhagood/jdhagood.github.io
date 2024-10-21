@@ -113,12 +113,70 @@
     <main class="grow">
 <div class="prose prose-stone dark:prose-invert max-w-none">
 <div class="mb-3">
-  <h1 class="top-h1" style="font-size: 2.75em">3D Printed Clothes</h1>
+  <h1 class="top-h1" style="font-size: 2.75em">Automated Etch-a-Sketch</h1>
   <p class="mb-1">November 19, 2022</p>
   <p>&mdash;</p>
 </div>
 <div class="content">
-  
+  <p>This project was made for the De Florez competition. You can check out the poster <a href="/images/etch_a_sketch/deflorez_poster.pdf">here</a>.
+
+    <figure>
+        <img src="/images/etch_a_sketch/dog_sunglasses.jpg" alt="Image 1" style="width: 50%; height: auto; display: block; margin: 0 auto;">
+        <figcaption>Prompt: "A dog with sunglasses"</figcaption>
+    </figure>
+
+</p>
+<p>Project ideas often times come from the most mundane objects. One day an Etch-a-Sketch showed up in my dorm&rsquo;s lounge, and after playing with it for a couple of minutes and creating dissapointing images, I had the idea to make it automated. I started talking about the idea with some of my friends, and Elijah Bell said that he wante to help with the project. In order to give ourselves a deadline, we signed up for the De Florez competition, an annual mechanical engineering competition.</p>
+<h2 id="the-human-interface">The Human Interface</h2>
+<p>One of the first challenges was determining how humans would interface with the device. After bounching some ideas around we realized that we could use generative AI to make the images. We could then just have a human type in what they want to see, send that request in an API request to DALL-E, and get back an image.</p>
+<h2 id="the-pathfinding-algorithem">The Pathfinding Algorithem</h2>
+
+    <figure>
+        <img src="/images/etch_a_sketch/example.jpg" alt="Image 1" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+        <figcaption>Trying to go from an image to connected image</figcaption>
+    </figure>
+
+
+<p>The next big challenge was figuring out how to go from an image to a path that you can trace on an Etch-a-Sketch. If we allow backtracking, then the only requirement for an image is that it is connected. In order to try to rectify this every prompt we sent to DALL-E started with &ldquo;Generate a simple image of the following prompt drawn with a single continuous black line without picking up the pen in a line art style. Prompt:.&rdquo; For example, if the user typed in &ldquo;Two stick figures next to each other&rdquo; we would send the prompt:</p>
+<p><em>Generate a simple image of the following prompt drawn with a single continuous black line without picking up the pen in a line art style. Prompt: Two stick figures next to each other</em>
+
+    <figure>
+        <img src="/images/etch_a_sketch/stick-figures-AI.png" alt="Image 1" style="width: 70%; height: auto; display: block; margin: 0 auto;">
+        <figcaption>What we got back from DALL-E</figcaption>
+    </figure>
+
+</p>
+<p>This is almost what we want except the heads are disconnected. This inspired us to create this algoritm:</p>
+<ol>
+<li>Get image from Dall-E from instructions + user prompt</li>
+<li>Convert to Black and White, downscale, find connected components, remove components smaller than 8 pixels.</li>
+<li>Trace by:
+<ol>
+<li>Go from the current point (starts at 0,0) to a point in the next component, minimizing white space traveled through by using Dijkstra&rsquo;s algorithm. Add points traveled through to a path array.</li>
+<li>Depth First Search (DFS) through the component, backtracking with BFS if hitting an end point.</li>
+<li>Repeat until all components are exhausted</li>
+</ol>
+</li>
+</ol>
+<p>Backtracking is important because without it, when the DFS reaches a dead end, we would get random lines drawn across the image</p>
+
+    <figure>
+        <img src="/images/etch_a_sketch/backtrack-explanation.png" alt="Image 1" style="width: 70%; height: auto; display: block; margin: 0 auto;">
+        <figcaption>With and without backtracking</figcaption>
+    </figure>
+
+
+<p>This was particularly difficult to implement, and the algorithem was not very optimized, but we eventually got it working.</p>
+
+    <figure>
+        <img src="/images/etch_a_sketch/algo_example.png" alt="Image 1" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+        <figcaption></figcaption>
+    </figure>
+
+
+<h2 id="mechanical-design">Mechanical Design</h2>
+<p>Elijah is a mechanical engineer with scarily good CADing skills. He decided to make the drawing robot as sleek as possible and be easily adaptable to any Etch-a-Sketch</p>
+
 </div>
 </div>
 <div class="flex flex-row justify-around my-2">

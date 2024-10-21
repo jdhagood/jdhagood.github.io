@@ -16,11 +16,11 @@
       <description>&lt;p&gt;This is my page about defextiles.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>3D Printed Clothes</title>
+      <title>Automated Etch-a-Sketch</title>
       <link>https://jdhagood.github.io/projects/etch_a_sketch/</link>
       <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://jdhagood.github.io/projects/etch_a_sketch/</guid>
-      <description></description>
+      <description>&lt;p&gt;This project was made for the De Florez competition. You can check out the poster &lt;a href=&#34;https://jdhagood.github.io/images/etch_a_sketch/deflorez_poster.pdf&#34;&gt;here&lt;/a&gt;.&#xA;&#xD;&#xA;    &lt;figure&gt;&#xD;&#xA;        &lt;img src=&#34;https://jdhagood.github.io/images/etch_a_sketch/dog_sunglasses.jpg&#34; alt=&#34;Image 1&#34; style=&#34;width: 50%; height: auto; display: block; margin: 0 auto;&#34;&gt;&#xD;&#xA;        &lt;figcaption&gt;Prompt: &#34;A dog with sunglasses&#34;&lt;/figcaption&gt;&#xD;&#xA;    &lt;/figure&gt;&#xD;&#xA;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Project ideas often times come from the most mundane objects. One day an Etch-a-Sketch showed up in my dorm&amp;rsquo;s lounge, and after playing with it for a couple of minutes and creating dissapointing images, I had the idea to make it automated. I started talking about the idea with some of my friends, and Elijah Bell said that he wante to help with the project. In order to give ourselves a deadline, we signed up for the De Florez competition, an annual mechanical engineering competition.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cardboard Computer</title>
@@ -41,7 +41,7 @@
       <link>https://jdhagood.github.io/projects/single_board_games/</link>
       <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
       <guid>https://jdhagood.github.io/projects/single_board_games/</guid>
-      <description></description>
+      <description>&lt;p&gt;This week our assignment was to mill out the boards we designed last week. I opted to mill out the simple timing game board I designed. I first tried to download my gerber files directly from PCB-SVG, but it did not rotate each LED correctly. I had to download it as a Kicad file, open it in Kicad, and then download the gerber files from Kicad. With this small hiccup solved, I could then let the mill do the heavy lifting of milling my board.&#xA;&#xD;&#xA;    &lt;div class=&#34;image-grid&#34;&gt;&#xD;&#xA;        &lt;img src=&#34;https://jdhagood.github.io/images/single_board_games/milled_board.jpg&#34; alt=&#34;Image 1&#34;&gt;&#xD;&#xA;        &lt;img src=&#34;https://jdhagood.github.io/images/single_board_games/ready_to_be_soldered.jpg&#34; alt=&#34;Image 1&#34;&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&#xA;It was now time to solder everything on the board. I absolutely love soldering surface mount components with solder paste, so I did this for all the components except for the ATtiny3226 because I was worried about shorting the pins with too much solder paste. I mainly used 1208 sized components, which may look small, but after soldering hundreds of 0805 components on the Solar Car team, 1208 was a breeze.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MIT Spokes Speaker Kits</title>
