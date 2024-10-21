@@ -1,61 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Projects on </title>
-    <link>https://jdhagood.github.io/projects/</link>
-    <description>Recent content in Projects on </description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 19 Nov 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jdhagood.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>3D Printed Clothes</title>
-      <link>https://jdhagood.github.io/projects/3d_printed_clothes/</link>
-      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://jdhagood.github.io/projects/3d_printed_clothes/</guid>
-      <description>&lt;p&gt;This is my page about defextiles.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Automated Etch-a-Sketch</title>
-      <link>https://jdhagood.github.io/projects/etch_a_sketch/</link>
-      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://jdhagood.github.io/projects/etch_a_sketch/</guid>
-      <description>&lt;p&gt;This project was made for the De Florez competition. You can check out the poster &lt;a href=&#34;https://jdhagood.github.io/images/etch_a_sketch/deflorez_poster.pdf&#34;&gt;here&lt;/a&gt;.&#xA;&#xD;&#xA;    &lt;figure&gt;&#xD;&#xA;        &lt;img src=&#34;https://jdhagood.github.io/images/etch_a_sketch/dog_sunglasses.jpg&#34; alt=&#34;Image 1&#34; style=&#34;width: 50%; height: auto; display: block; margin: 0 auto;&#34;&gt;&#xD;&#xA;        &lt;figcaption&gt;Prompt: &#34;A dog with sunglasses&#34;&lt;/figcaption&gt;&#xD;&#xA;    &lt;/figure&gt;&#xD;&#xA;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;Project ideas often times come from the most mundane objects. One day an Etch-a-Sketch showed up in my dorm&amp;rsquo;s lounge, and after playing with it for a couple of minutes and creating dissapointing images, I had the idea to make it automated. I started talking about the idea with some of my friends, and Elijah Bell said that he wante to help with the project. In order to give ourselves a deadline, we signed up for the De Florez competition, an annual mechanical engineering competition.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Cardboard Computer</title>
-      <link>https://jdhagood.github.io/projects/cardboard_computer/</link>
-      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://jdhagood.github.io/projects/cardboard_computer/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>NFC Pen Testing GLove</title>
-      <link>https://jdhagood.github.io/projects/nfc_glove/</link>
-      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://jdhagood.github.io/projects/nfc_glove/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Single Board Games</title>
-      <link>https://jdhagood.github.io/projects/single_board_games/</link>
-      <pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate>
-      <guid>https://jdhagood.github.io/projects/single_board_games/</guid>
-      <description>&lt;p&gt;This week our assignment was to mill out the boards we designed last week. I opted to mill out the simple timing game board I designed. I first tried to download my gerber files directly from PCB-SVG, but it did not rotate each LED correctly. I had to download it as a Kicad file, open it in Kicad, and then download the gerber files from Kicad. With this small hiccup solved, I could then let the mill do the heavy lifting of milling my board.&#xA;&#xD;&#xA;    &lt;div class=&#34;image-grid&#34;&gt;&#xD;&#xA;        &lt;img src=&#34;https://jdhagood.github.io/images/single_board_games/milled_board.jpg&#34; alt=&#34;Image 1&#34;&gt;&#xD;&#xA;        &lt;img src=&#34;https://jdhagood.github.io/images/single_board_games/ready_to_be_soldered.jpg&#34; alt=&#34;Image 1&#34;&gt;&#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;&#xA;It was now time to solder everything on the board. I absolutely love soldering surface mount components with solder paste, so I did this for all the components except for the ATtiny3226 because I was worried about shorting the pins with too much solder paste. I mainly used 1208 sized components, which may look small, but after soldering hundreds of 0805 components on the Solar Car team, 1208 was a breeze.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>MIT Spokes Speaker Kits</title>
-      <link>https://jdhagood.github.io/projects/speaker_kits/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jdhagood.github.io/projects/speaker_kits/</guid>
-      <description>&lt;p&gt;This past summer I had the privelege to bike across the country with &lt;a href=&#34;https://www.mitspokes.com/&#34;&gt;MIT Spokes&lt;/a&gt;. It was a 74-day student-led trip, starting in Washington, D.C., and ending in San Francisco. Along the way, we stopped at schools, libraries, camps, and even a correctional facility to teach STEM topics based on our personal interests.&lt;/p&gt;&#xA;&lt;p&gt;When planning my lesson, I knew I wanted it to be as hands-on as possible. I decided to teach about the physics of sound by having each student build their own speaker. From there, I had the task of manufacturing 200 speaker kits for the summer.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Reciept Poetry Printing Robot</title>
-      <link>https://jdhagood.github.io/projects/poetry_robot/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jdhagood.github.io/projects/poetry_robot/</guid>
-      <description>&lt;p&gt;I wrote this down first because this is a project that I have been working on recently. My friend from Yale really likes poetry, and once I started playing with thermal printers, he got the idea to print poems with them. I thought that this was a great idea and immediately hopped into onshape. I designed a sheet metal enclosure for it with a 3D printed sign on top encouraging users to press the big red button. You can check out the Onshape cad &lt;a href=&#34;https://cad.onshape.com/documents/cf3778deca11ee0736d88359/w/80c19d9216b3187a060b21ef/e/34e68baa4d9532f38bcb4871?renderMode=0&amp;amp;uiState=66f1c5994927d10f4adc73d7&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on</title><link>https://jdhagood.github.io/projects/</link><description>Recent content in Projects on</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 19 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://jdhagood.github.io/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>3D Printed Clothes</title><link>https://jdhagood.github.io/projects/3d_printed_clothes/</link><pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate><guid>https://jdhagood.github.io/projects/3d_printed_clothes/</guid><description>&lt;p>This is my page about defextiles.&lt;/p></description></item><item><title>Automated Etch-a-Sketch</title><link>https://jdhagood.github.io/projects/etch_a_sketch/</link><pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate><guid>https://jdhagood.github.io/projects/etch_a_sketch/</guid><description>&lt;p>This project was made for the De Florez competition. You can check out the poster &lt;a href="https://jdhagood.github.io/images/etch_a_sketch/deflorez_poster.pdf">here&lt;/a>.
+
+ &lt;figure>
+ &lt;img src="https://jdhagood.github.io/images/etch_a_sketch/dog_sunglasses.jpg" alt="Image 1" style="width: 50%; height: auto; display: block; margin: 0 auto;">
+ &lt;figcaption>Prompt: "A dog with sunglasses"&lt;/figcaption>
+ &lt;/figure>
+
+&lt;/p>
+&lt;p>Project ideas often times come from the most mundane objects. One day an Etch-a-Sketch showed up in my dorm&amp;rsquo;s lounge, and after playing with it for a couple of minutes and creating dissapointing images, I had the idea to make it automated. I started talking about the idea with some of my friends, and Elijah Bell said that he wante to help with the project. In order to give ourselves a deadline, we signed up for the De Florez competition, an annual mechanical engineering competition.&lt;/p></description></item><item><title>Cardboard Computer</title><link>https://jdhagood.github.io/projects/cardboard_computer/</link><pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate><guid>https://jdhagood.github.io/projects/cardboard_computer/</guid><description/></item><item><title>NFC Pen Testing GLove</title><link>https://jdhagood.github.io/projects/nfc_glove/</link><pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate><guid>https://jdhagood.github.io/projects/nfc_glove/</guid><description/></item><item><title>Single Board Games</title><link>https://jdhagood.github.io/projects/single_board_games/</link><pubDate>Sat, 19 Nov 2022 00:00:00 +0000</pubDate><guid>https://jdhagood.github.io/projects/single_board_games/</guid><description>&lt;p>This week our assignment was to mill out the boards we designed last week. I opted to mill out the simple timing game board I designed. I first tried to download my gerber files directly from PCB-SVG, but it did not rotate each LED correctly. I had to download it as a Kicad file, open it in Kicad, and then download the gerber files from Kicad. With this small hiccup solved, I could then let the mill do the heavy lifting of milling my board.
+
+ &lt;div class="image-grid">
+ &lt;img src="https://jdhagood.github.io/images/single_board_games/milled_board.jpg" alt="Image 1">
+ &lt;img src="https://jdhagood.github.io/images/single_board_games/ready_to_be_soldered.jpg" alt="Image 1">
+ &lt;/div>
+
+
+It was now time to solder everything on the board. I absolutely love soldering surface mount components with solder paste, so I did this for all the components except for the ATtiny3226 because I was worried about shorting the pins with too much solder paste. I mainly used 1208 sized components, which may look small, but after soldering hundreds of 0805 components on the Solar Car team, 1208 was a breeze.&lt;/p></description></item><item><title>MIT Spokes Speaker Kits</title><link>https://jdhagood.github.io/projects/speaker_kits/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jdhagood.github.io/projects/speaker_kits/</guid><description>&lt;p>This past summer I had the privelege to bike across the country with &lt;a href="https://www.mitspokes.com/">MIT Spokes&lt;/a>. It was a 74-day student-led trip, starting in Washington, D.C., and ending in San Francisco. Along the way, we stopped at schools, libraries, camps, and even a correctional facility to teach STEM topics based on our personal interests.&lt;/p>
+&lt;p>When planning my lesson, I knew I wanted it to be as hands-on as possible. I decided to teach about the physics of sound by having each student build their own speaker. From there, I had the task of manufacturing 200 speaker kits for the summer.&lt;/p></description></item><item><title>Reciept Poetry Printing Robot</title><link>https://jdhagood.github.io/projects/poetry_robot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://jdhagood.github.io/projects/poetry_robot/</guid><description>&lt;p>I wrote this down first because this is a project that I have been working on recently. My friend from Yale really likes poetry, and once I started playing with thermal printers, he got the idea to print poems with them. I thought that this was a great idea and immediately hopped into onshape. I designed a sheet metal enclosure for it with a 3D printed sign on top encouraging users to press the big red button. You can check out the Onshape cad &lt;a href="https://cad.onshape.com/documents/cf3778deca11ee0736d88359/w/80c19d9216b3187a060b21ef/e/34e68baa4d9532f38bcb4871?renderMode=0&amp;amp;uiState=66f1c5994927d10f4adc73d7">here&lt;/a>.&lt;/p></description></item></channel></rss>

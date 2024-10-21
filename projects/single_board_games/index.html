@@ -1,284 +1,79 @@
-<!DOCTYPE html>
-<html lang="en-us" class="m-auto dark"><head>
-  <title>Project Portfolio</title>
-
-<meta name="theme-color" content="" />
-<meta charset="utf-8" />
-<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-<meta name="description" content="JD Hagood&#39;s Personal Project Portfolio" />
-<meta name="author" content="JD Hagood" />
-<meta name="generator" content="aafu theme by Darshan in Hugo 0.134.1" />
-
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">        <link rel="manifest" href="/site.webmanifest">        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="/favicon.ico">
-  <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
-    crossorigin="anonymous"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
-  />  
-
-  
-  
-
-
-
-
-
-  <link href="/main.min.bdd0c35db7d5366d6885f58829abbfd07cf15583b90d2ea8f318a046f02860f2.css" rel="stylesheet" />
-
-  <script>
-    let html = document.querySelector("html");
-    let theme = window.localStorage.getItem("theme");
-    if (theme) {
-      theme === "dark"
-        ? html.classList.add("dark")
-        : html.classList.remove("dark");
-    } else if (html.classList.contains("dark")) {
-      window.localStorage.setItem("theme", "dark");
-    } else {
-      html.classList.remove("dark");
-      window.localStorage.setItem("theme", "light");
-    }
-
-    window.onload = () => {
-      let themeToggle = document.querySelector(".theme-toggle");
-      if (window.localStorage.getItem("theme") === "dark") {
-        themeToggle.classList.remove("bi-moon-fill");
-        themeToggle.classList.add("bi-brightness-high");
-      } else {
-        themeToggle.classList.add("bi-moon-fill");
-        themeToggle.classList.remove("bi-brightness-high");
-      }
-
-      let defaultActivePanel = document.querySelector(".accordion.active");
-      if (defaultActivePanel) {
-        defaultActivePanel.nextElementSibling.style.maxHeight =
-          defaultActivePanel.nextElementSibling.scrollHeight + "px";
-      }
-    };
-
-    window.onresize = () => {
-      let defaultActivePanel = document.querySelector(".accordion.active");
-      if (defaultActivePanel) {
-        defaultActivePanel.nextElementSibling.style.maxHeight =
-          defaultActivePanel.nextElementSibling.scrollHeight + "px";
-      }
-    };
-  </script>
-</head>
-<body class="h-screen p-2 m-auto max-w-4xl flex flex-col">
-    
-    <header
-  class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-300 dark:border-gray-700 justify-between"
->
-  <div>
-    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="https://jdhagood.github.io/">Home</a>    
-    <a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href="/blog">Blog</a>
-  </div>
-  <div>
-  <a class="mr-4" href="/search"><i class="fas fa-search"></i></i></a>
-  <i
-    class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0"
-    onclick="lightDark(this)"
-  ></i>
-</div>
-</header>
-
-<script>
-  const lightDark = (el) => {
-    let html = document.querySelector("html");
-    if (html.classList.contains("dark")) {
-      html.classList.remove("dark");
-      el.classList.add("fa-moon");
-      el.classList.remove("fa-sun");
-      window.localStorage.setItem("theme", "light");
-    } else {
-      html.classList.add("dark");
-      el.classList.add("fa-sun");
-      el.classList.remove("fa-moon");
-      window.localStorage.setItem("theme", "dark");
-    }
-  };
-</script>
-
-    
-    <main class="grow">
-<div class="prose prose-stone dark:prose-invert max-w-none">
-<div class="mb-3">
-  <h1 class="top-h1" style="font-size: 2.75em">Single Board Games</h1>
-  <p class="mb-1">November 19, 2022</p>
-  <p>&mdash;</p>
-</div>
-<div class="content">
-  <p>This week our assignment was to mill out the boards we designed last week. I opted to mill out the simple timing game board I designed. I first tried to download my gerber files directly from PCB-SVG, but it did not rotate each LED correctly. I had to download it as a Kicad file, open it in Kicad, and then download the gerber files from Kicad. With this small hiccup solved, I could then let the mill do the heavy lifting of milling my board.
-
-    <div class="image-grid">
-        <img src="/images/single_board_games/milled_board.jpg" alt="Image 1">
-        <img src="/images/single_board_games/ready_to_be_soldered.jpg" alt="Image 1">
-    </div>
-
-
-It was now time to solder everything on the board. I absolutely love soldering surface mount components with solder paste, so I did this for all the components except for the ATtiny3226 because I was worried about shorting the pins with too much solder paste. I mainly used 1208 sized components, which may look small, but after soldering hundreds of 0805 components on the Solar Car team, 1208 was a breeze.</p>
-<p>I did forget to connect the ground pin of the ATtiny3226 to ground, but this was an easy fix as I only needed to short the ground pin to one of the large unconnect copper sections and then short this copper section to the circular ground track on the edge of the board.
-
-    <div class="image-grid">
-        <img src="/images/single_board_games/solder_paste.jpg" alt="Image 1">
-        <img src="/images/single_board_games/soldered_board.jpg" alt="Image 1">
-    </div>
-
-</p>
-<p>
-    <img src="/images/single_board_games/programming_board.jpg" alt="Profile Picture" class="floatright" style="width:300px;"/>
-
-
-Now came the challenge of actually programming the board. I used the Arduino IDE to do this. I downloaded the megaTinyCore in my boards manager, connected an FTDI programmer to the UPDI pin of the ATtiny 3226, wrote a simple blink sketch, and pressed upload. I held my breath as it complied, but I was then hit with the error message &ldquo;a programmer is needed to upload.&rdquo;</p>
-<p>I had the programmer plugged into my computer, and this sent me down a very deep rabbit hole of trying to configure the drivers on my computer and even converting an arduino uno into a jtag programmer because I thought the FTDI programmer was broken. I was about to give up when I saw the option to &ldquo;Upload Using Programmer.&rdquo; I clicked this and an LED started blinking on my board. This was a major facepalm moment, but at least I can now upload programs.</p>
-<p>The sketch to make the game was not complicated. However, when I tried to run the device off the coin cell battery, the program would randomly restart. I knew that this had to be because the battery could not supply enough current. Thankfully I read in the datasheet that you could make the microcontroller consume less power if you made the internal clock slower. I had the option to reduce the clock speed all the way down to 1MHz, and after this the board worked fine off battery power.
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-arduino" data-lang="arduino"><span style="display:flex;"><span><span style="color:#75715e">#define LED_COUNT 14
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#define BUTTON_PIN 9
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#define START_DELAY 750
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">byte</span> leds[] <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">15</span>
-</span></span><span style="display:flex;"><span>};
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">long</span> last_led_move_time <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">long</span> last_button_press_time <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">byte</span> stationary_led <span style="color:#f92672">=</span> <span style="color:#a6e22e">random</span>(<span style="color:#ae81ff">0</span>, LED_COUNT);
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">byte</span> moving_led <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> move_delay <span style="color:#f92672">=</span> START_DELAY;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">bool</span> CCW <span style="color:#f92672">=</span> false;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">setup</span>() {
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">byte</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> LED_COUNT; i<span style="color:#f92672">++</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">pinMode</span>(leds[i], <span style="color:#66d9ef">OUTPUT</span>);
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">pinMode</span>(BUTTON_PIN, <span style="color:#66d9ef">INPUT_PULLUP</span>);
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">loop</span>() {
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">millis</span>()<span style="color:#f92672">-</span>last_led_move_time <span style="color:#f92672">&gt;=</span> move_delay) {
-</span></span><span style="display:flex;"><span>    last_led_move_time <span style="color:#f92672">=</span> <span style="color:#a6e22e">millis</span>();
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">digitalWrite</span>(leds[moving_led], <span style="color:#66d9ef">LOW</span>);
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">switch</span>(CCW) {
-</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">case</span> true<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>        moving_led <span style="color:#f92672">=</span> (moving_led <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> LED_COUNT;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>;
-</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">case</span> false<span style="color:#f92672">:</span>
-</span></span><span style="display:flex;"><span>        moving_led <span style="color:#f92672">=</span> (moving_led <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">+</span> LED_COUNT) <span style="color:#f92672">%</span> LED_COUNT;
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">break</span>;
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">digitalWrite</span>(leds[stationary_led], <span style="color:#66d9ef">HIGH</span>);
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">digitalWrite</span>(leds[moving_led], <span style="color:#66d9ef">HIGH</span>);
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">digitalRead</span>(<span style="color:#ae81ff">9</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">delay</span>(<span style="color:#ae81ff">100</span>);
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(moving_led <span style="color:#f92672">==</span> stationary_led) {
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">digitalWrite</span>(leds[stationary_led], <span style="color:#66d9ef">LOW</span>);
-</span></span><span style="display:flex;"><span>      stationary_led <span style="color:#f92672">=</span> <span style="color:#a6e22e">random</span>(<span style="color:#ae81ff">0</span>, LED_COUNT);
-</span></span><span style="display:flex;"><span>      move_delay <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">*</span>move_delay<span style="color:#f92672">/</span><span style="color:#ae81ff">5</span>;
-</span></span><span style="display:flex;"><span>      CCW <span style="color:#f92672">=</span> <span style="color:#f92672">!</span>CCW;
-</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
-</span></span><span style="display:flex;"><span>      fail_animation_and_reset();
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span>(<span style="color:#a6e22e">digitalRead</span>(<span style="color:#ae81ff">9</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) {}
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">fail_animation_and_reset</span>() {
-</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">byte</span> j <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; j <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">5</span>; j<span style="color:#f92672">++</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">byte</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> LED_COUNT; i<span style="color:#f92672">++</span>) {
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">digitalWrite</span>(leds[i], <span style="color:#66d9ef">HIGH</span>);
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">delay</span>(<span style="color:#ae81ff">300</span>);
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">byte</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> LED_COUNT; i<span style="color:#f92672">++</span>) {
-</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">digitalWrite</span>(leds[i], <span style="color:#66d9ef">LOW</span>);
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">delay</span>(<span style="color:#ae81ff">300</span>);
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>  move_delay <span style="color:#f92672">=</span> START_DELAY;
-</span></span><span style="display:flex;"><span>}</span></span></code></pre></div></p>
-<p>And ta-da, a working game.
-
-<div style="margin-right: 15px;">
-    <video width="700" controls>
-    <source src="/images/single_board_games/working_game.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
-</div>
-
-
-This was fun to play with for a little while, but then I wanted to up the stakes. Using a MOSFET and one of the free GPIO pins on the ATtiny3226, I make it such that when you lose the game it triggers a high voltage boost converter.
-
-<div style="margin-right: 15px;">
-    <video width="700" controls>
-    <source src="/images/single_board_games/taser.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
-</div>
-
-</p>
-
-</div>
-</div>
-<div class="flex flex-row justify-around my-2">
-  <h3 class="mb-1 mt-1 text-left mr-4">
-    
-    <a
-      href="/projects/speaker_kits/"
-      title="MIT Spokes Speaker Kits"
-    >
-      <i class="nav-menu fas fa-chevron-circle-left"></i>
-    </a>
-    
-  </h3>
-  <h3 class="mb-1 mt-1 text-left ml-4">
-    
-    <a
-      href="/projects/nfc_glove/"
-      title="NFC Pen Testing GLove"
-    >
-      <i class="nav-menu fas fa-chevron-circle-right"></i>
-    </a>
-    
-  </h3>
-</div>
-
-
-    </main>
-    
-    <footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700  py-6 ">
-  <p class="markdownify">powered by <a href="https://gohugo.io/">hugo</a> &amp; deployed on <a href="https://pages.github.com/">GitHub Pages</a></p>
-  <p >
-    <i>
-      <a href="https://github.com/darshanbaral/aafu">
-        aafu
-      </a>
-    </i>
-    by
-    <a href="https://www.darshanbaral.com/">
-      darshan
-    </a>
-  </p>
-</footer>
-
-    
-  </body>
-  
-  <link rel="stylesheet" href="css/custom.css">
-  
-
-</html>
+<!doctype html><html lang=en-us class="m-auto dark"><head><title>Project Portfolio</title>
+<meta name=theme-color content><meta charset=utf-8><meta content="width=device-width,initial-scale=1" name=viewport><meta name=description content="JD Hagood's Personal Project Portfolio"><meta name=author content="JD Hagood"><meta name=generator content="aafu theme by Darshan in Hugo 0.134.1"><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#252627><link rel="shortcut icon" href=/favicon.ico><link rel=stylesheet href=https://use.fontawesome.com/releases/v5.15.2/css/all.css integrity=sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu crossorigin=anonymous><link rel=stylesheet href=https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css><link rel=stylesheet href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"><link href="/main.min.bdd0c35db7d5366d6885f58829abbfd07cf15583b90d2ea8f318a046f02860f2.css" rel=stylesheet><script>let html=document.querySelector("html"),theme=window.localStorage.getItem("theme");theme?theme==="dark"?html.classList.add("dark"):html.classList.remove("dark"):html.classList.contains("dark")?window.localStorage.setItem("theme","dark"):(html.classList.remove("dark"),window.localStorage.setItem("theme","light")),window.onload=()=>{let e=document.querySelector(".theme-toggle");window.localStorage.getItem("theme")==="dark"?(e.classList.remove("bi-moon-fill"),e.classList.add("bi-brightness-high")):(e.classList.add("bi-moon-fill"),e.classList.remove("bi-brightness-high"));let t=document.querySelector(".accordion.active");t&&(t.nextElementSibling.style.maxHeight=t.nextElementSibling.scrollHeight+"px")},window.onresize=()=>{let e=document.querySelector(".accordion.active");e&&(e.nextElementSibling.style.maxHeight=e.nextElementSibling.scrollHeight+"px")}</script></head><body class="h-screen p-2 m-auto max-w-4xl flex flex-col"><header class="nav flex flex-row row py-2 mb-6 w-full border-b border-gray-300 dark:border-gray-700 justify-between"><div><a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href=https://jdhagood.github.io/>Home</a>
+<a class="no-underline p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800" href=/blog>Blog</a></div><div><a class=mr-4 href=/search><i class="fas fa-search"></i></i></a>
+<i class="fas fa-sun theme-toggle text-blue-500 hover:text-blue-700 dark:text-yellow-300 dark:hover:text-yellow-500 cursor-pointer text-lg mr-9 sm:mr-0" onclick=lightDark(this)></i></div></header><script>const lightDark=e=>{let t=document.querySelector("html");t.classList.contains("dark")?(t.classList.remove("dark"),e.classList.add("fa-moon"),e.classList.remove("fa-sun"),window.localStorage.setItem("theme","light")):(t.classList.add("dark"),e.classList.add("fa-sun"),e.classList.remove("fa-moon"),window.localStorage.setItem("theme","dark"))}</script><main class=grow><div class="prose prose-stone dark:prose-invert max-w-none"><div class=mb-3><h1 class=top-h1 style=font-size:2.75em>Single Board Games</h1><p class=mb-1>November 19, 2022</p><p>&mdash;</p></div><div class=content><p>This week our assignment was to mill out the boards we designed last week. I opted to mill out the simple timing game board I designed. I first tried to download my gerber files directly from PCB-SVG, but it did not rotate each LED correctly. I had to download it as a Kicad file, open it in Kicad, and then download the gerber files from Kicad. With this small hiccup solved, I could then let the mill do the heavy lifting of milling my board.<div class=image-grid><img src=/images/single_board_games/milled_board.jpg alt="Image 1">
+<img src=/images/single_board_games/ready_to_be_soldered.jpg alt="Image 1"></div>It was now time to solder everything on the board. I absolutely love soldering surface mount components with solder paste, so I did this for all the components except for the ATtiny3226 because I was worried about shorting the pins with too much solder paste. I mainly used 1208 sized components, which may look small, but after soldering hundreds of 0805 components on the Solar Car team, 1208 was a breeze.</p><p>I did forget to connect the ground pin of the ATtiny3226 to ground, but this was an easy fix as I only needed to short the ground pin to one of the large unconnect copper sections and then short this copper section to the circular ground track on the edge of the board.<div class=image-grid><img src=/images/single_board_games/solder_paste.jpg alt="Image 1">
+<img src=/images/single_board_games/soldered_board.jpg alt="Image 1"></div></p><p><img src=/images/single_board_games/programming_board.jpg alt="Profile Picture" class=floatright style=width:300px>
+Now came the challenge of actually programming the board. I used the Arduino IDE to do this. I downloaded the megaTinyCore in my boards manager, connected an FTDI programmer to the UPDI pin of the ATtiny 3226, wrote a simple blink sketch, and pressed upload. I held my breath as it complied, but I was then hit with the error message &ldquo;a programmer is needed to upload.&rdquo;</p><p>I had the programmer plugged into my computer, and this sent me down a very deep rabbit hole of trying to configure the drivers on my computer and even converting an arduino uno into a jtag programmer because I thought the FTDI programmer was broken. I was about to give up when I saw the option to &ldquo;Upload Using Programmer.&rdquo; I clicked this and an LED started blinking on my board. This was a major facepalm moment, but at least I can now upload programs.</p><p>The sketch to make the game was not complicated. However, when I tried to run the device off the coin cell battery, the program would randomly restart. I knew that this had to be because the battery could not supply enough current. Thankfully I read in the datasheet that you could make the microcontroller consume less power if you made the internal clock slower. I had the option to reduce the clock speed all the way down to 1MHz, and after this the board worked fine off battery power.<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-arduino data-lang=arduino><span style=display:flex><span><span style=color:#75715e>#define LED_COUNT 14
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#define BUTTON_PIN 9
+</span></span></span><span style=display:flex><span><span style=color:#75715e>#define START_DELAY 750
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#66d9ef>byte</span> leds[] <span style=color:#f92672>=</span> {
+</span></span><span style=display:flex><span>  <span style=color:#ae81ff>0</span>, <span style=color:#ae81ff>1</span>, <span style=color:#ae81ff>2</span>, <span style=color:#ae81ff>3</span>, <span style=color:#ae81ff>4</span>, <span style=color:#ae81ff>5</span>, <span style=color:#ae81ff>6</span>, <span style=color:#ae81ff>7</span>, <span style=color:#ae81ff>8</span>, <span style=color:#ae81ff>10</span>, <span style=color:#ae81ff>11</span>, <span style=color:#ae81ff>12</span>, <span style=color:#ae81ff>13</span>, <span style=color:#ae81ff>15</span>
+</span></span><span style=display:flex><span>};
+</span></span><span style=display:flex><span><span style=color:#66d9ef>unsigned</span> <span style=color:#66d9ef>long</span> last_led_move_time <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>unsigned</span> <span style=color:#66d9ef>long</span> last_button_press_time <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>byte</span> stationary_led <span style=color:#f92672>=</span> <span style=color:#a6e22e>random</span>(<span style=color:#ae81ff>0</span>, LED_COUNT);
+</span></span><span style=display:flex><span><span style=color:#66d9ef>byte</span> moving_led <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int</span> move_delay <span style=color:#f92672>=</span> START_DELAY;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>bool</span> CCW <span style=color:#f92672>=</span> false;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>setup</span>() {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>byte</span> i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; i <span style=color:#f92672>&lt;</span> LED_COUNT; i<span style=color:#f92672>++</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>pinMode</span>(leds[i], <span style=color:#66d9ef>OUTPUT</span>);
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>pinMode</span>(BUTTON_PIN, <span style=color:#66d9ef>INPUT_PULLUP</span>);
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>loop</span>() {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>if</span>(<span style=color:#a6e22e>millis</span>()<span style=color:#f92672>-</span>last_led_move_time <span style=color:#f92672>&gt;=</span> move_delay) {
+</span></span><span style=display:flex><span>    last_led_move_time <span style=color:#f92672>=</span> <span style=color:#a6e22e>millis</span>();
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>digitalWrite</span>(leds[moving_led], <span style=color:#66d9ef>LOW</span>);
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>switch</span>(CCW) {
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>case</span> true<span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>        moving_led <span style=color:#f92672>=</span> (moving_led <span style=color:#f92672>+</span> <span style=color:#ae81ff>1</span>) <span style=color:#f92672>%</span> LED_COUNT;
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>break</span>;
+</span></span><span style=display:flex><span>      <span style=color:#66d9ef>case</span> false<span style=color:#f92672>:</span>
+</span></span><span style=display:flex><span>        moving_led <span style=color:#f92672>=</span> (moving_led <span style=color:#f92672>-</span> <span style=color:#ae81ff>1</span> <span style=color:#f92672>+</span> LED_COUNT) <span style=color:#f92672>%</span> LED_COUNT;
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>break</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>digitalWrite</span>(leds[stationary_led], <span style=color:#66d9ef>HIGH</span>);
+</span></span><span style=display:flex><span>  <span style=color:#a6e22e>digitalWrite</span>(leds[moving_led], <span style=color:#66d9ef>HIGH</span>);
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>if</span>(<span style=color:#a6e22e>digitalRead</span>(<span style=color:#ae81ff>9</span>) <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>delay</span>(<span style=color:#ae81ff>100</span>);
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span>(moving_led <span style=color:#f92672>==</span> stationary_led) {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>digitalWrite</span>(leds[stationary_led], <span style=color:#66d9ef>LOW</span>);
+</span></span><span style=display:flex><span>      stationary_led <span style=color:#f92672>=</span> <span style=color:#a6e22e>random</span>(<span style=color:#ae81ff>0</span>, LED_COUNT);
+</span></span><span style=display:flex><span>      move_delay <span style=color:#f92672>=</span> <span style=color:#ae81ff>4</span><span style=color:#f92672>*</span>move_delay<span style=color:#f92672>/</span><span style=color:#ae81ff>5</span>;
+</span></span><span style=display:flex><span>      CCW <span style=color:#f92672>=</span> <span style=color:#f92672>!</span>CCW;
+</span></span><span style=display:flex><span>    } <span style=color:#66d9ef>else</span> {
+</span></span><span style=display:flex><span>      fail_animation_and_reset();
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>while</span>(<span style=color:#a6e22e>digitalRead</span>(<span style=color:#ae81ff>9</span>) <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>) {}
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>void</span> <span style=color:#a6e22e>fail_animation_and_reset</span>() {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>byte</span> j <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; j <span style=color:#f92672>&lt;</span> <span style=color:#ae81ff>5</span>; j<span style=color:#f92672>++</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>byte</span> i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; i <span style=color:#f92672>&lt;</span> LED_COUNT; i<span style=color:#f92672>++</span>) {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>digitalWrite</span>(leds[i], <span style=color:#66d9ef>HIGH</span>);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>delay</span>(<span style=color:#ae81ff>300</span>);
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>for</span>(<span style=color:#66d9ef>byte</span> i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; i <span style=color:#f92672>&lt;</span> LED_COUNT; i<span style=color:#f92672>++</span>) {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>digitalWrite</span>(leds[i], <span style=color:#66d9ef>LOW</span>);
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>delay</span>(<span style=color:#ae81ff>300</span>);
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>  move_delay <span style=color:#f92672>=</span> START_DELAY;
+</span></span><span style=display:flex><span>}</span></span></code></pre></div></p><p>And ta-da, a working game.<div style=margin-right:15px><video width=700 controls>
+<source src=/images/single_board_games/working_game.mp4 type=video/mp4>Your browser does not support the video tag.</video></div>This was fun to play with for a little while, but then I wanted to up the stakes. Using a MOSFET and one of the free GPIO pins on the ATtiny3226, I make it such that when you lose the game it triggers a high voltage boost converter.<div style=margin-right:15px><video width=700 controls>
+<source src=/images/single_board_games/taser.mp4 type=video/mp4>Your browser does not support the video tag.</video></div></p></div></div><div class="flex flex-row justify-around my-2"><h3 class="mb-1 mt-1 text-left mr-4"><a href=/projects/speaker_kits/ title="MIT Spokes Speaker Kits"><i class="nav-menu fas fa-chevron-circle-left"></i></a></h3><h3 class="mb-1 mt-1 text-left ml-4"><a href=/projects/nfc_glove/ title="NFC Pen Testing GLove"><i class="nav-menu fas fa-chevron-circle-right"></i></a></h3></div></main><footer class="text-sm text-center border-t border-gray-300 dark:border-gray-700 py-6"><p class=markdownify>powered by <a href=https://gohugo.io/>hugo</a> & deployed on <a href=https://pages.github.com/>GitHub Pages</a></p><p><i><a href=https://github.com/darshanbaral/aafu>aafu
+</a></i>by
+<a href=https://www.darshanbaral.com/>darshan</a></p></footer></body><link rel=stylesheet href=css/custom.css></html>
